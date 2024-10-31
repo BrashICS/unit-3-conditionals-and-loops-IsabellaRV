@@ -54,7 +54,7 @@ function user() {
 // Spooky activity
 function startGame() {
      let player_name = prompt("Name?");
-    alert("Welcome, "+ player_name +", to St. Matthews HS")
+    alert("Welcome, "+ player_name +", to St. Matthew HS")
     alert("Our relatively normal high school has undergone a scary transformation on the night of Halloween! Unfortunatly, you were in the building when this happened.")
     let decision = +prompt("You were in Mr. Brash's room when the power went out. Do you (1) flip the light switch, (2) search the cabinets, (3) use your phone's flashlight?")
 
@@ -93,10 +93,27 @@ function open_cabinet() {
 // LC
 function learning_comms() {
     alert("You go to the LC. There are no afterschool clubs tonight.. because it's Halloween. You find a portable phone charger to charge your phone while you find a way out.")
-    alert("There is a medical kit across the room near the photocopyer. It could come in handy later, so you walk towards the table...")
+    alert("There is a medical kit across the room near the photocopier. It could come in handy later, so you walk towards the table...")
     alert("!!!")
     alert("THE BOOKS ARE FLYING!?")
+    let choice = +prompt("Quick! Do you (1) take the medkit or (2) run to the halls?")
+
+    if (choice == 1) {
+        alert("You get hit with several books and get paper cuts (YEEEOUCH!) Now you have to use the band-aids in the medkit. That was a waste..")
+        hallway()
+    }
+    if (choice == 2) {
+        hallway()
+    }
 }
+
+
+// Hallway
+
+function hallway () {
+    alert("Test lol")
+}
+
 
 
 // Greenhouse
