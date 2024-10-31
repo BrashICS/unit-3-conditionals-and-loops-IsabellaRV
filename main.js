@@ -48,3 +48,57 @@ function user() {
         console.log("You have a long name...")
     }
 }
+
+
+/*** Intro ***/
+// Spooky activity
+function startGame() {
+     let player_name = prompt("Name?");
+    alert("Welcome, "+ player_name +", to St. Matthews HS")
+    alert("Our relatively normal high school has undergone a scary transformation on the night of Halloween! Unfortunatly, you were in the building when this happened.")
+    let decision = +prompt("You were in Mr. Brash's room when the power went out. Do you (1) flip the light switch, (2) search the cabinets, (3) use your phone's flashlight?")
+
+    if (decision == 1) {
+        alert("The power is out..")
+        alert("Try again")
+        return
+    }
+
+    if (decision == 2) {
+        open_cabinet()
+    }
+
+    if (decision == 3) {
+        alert("You're on 5% (Darn you social media apps!!!)")
+        alert("Try again")
+        return
+    }
+
+}
+
+function open_cabinet() {
+    alert("You find a flashlight and two extra batteries! Now it's time to search for a way out of the school.")
+    let choice = +prompt("Do you go to the (1) Learning Comms or (2) the greenhouse?")
+
+    if (choice == 1) {
+        learning_comms()
+    }
+
+    if (choice == 2) {
+        greenhouse()
+    }
+
+}
+
+// LC
+function learning_comms() {
+    alert("You go to the LC. There are no afterschool clubs tonight.. because it's Halloween. You find a portable phone charger to charge your phone while you find a way out.")
+    alert("There is a medical kit across the room near the photocopyer. It could come in handy later, so you walk towards the table...")
+    alert("!!!")
+    alert("THE BOOKS ARE FLYING!?")
+}
+
+
+// Greenhouse
+function greenhouse() {
+}
