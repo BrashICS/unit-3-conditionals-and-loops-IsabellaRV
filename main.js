@@ -161,6 +161,7 @@ function first_floor() {
     }
     if(choice == 2) {
         alert("You manage to dodge any trip hazards and hide from lurking monsters which you will never be able to describe due to their strange and terrifying forms (not because I'm too lazy.)")
+        gameEnd()
     }
 
 }
