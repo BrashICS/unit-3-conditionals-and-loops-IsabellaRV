@@ -186,3 +186,69 @@ function gameEnd() {
     alert("Thanks for playing. Perhaps in the future, I'll make a better game :)")
     return
 }
+
+/** LESSON 3.2 **/
+
+function menu() {
+    // Setup the menu
+let message = `Hi! Please make a selection:
+1 - Play
+2 - Options
+3 - DLC
+4 - Check for Updates
+5 - Exit
+`
+// Prompt with the menu
+let selection = Number(prompt(message));
+
+if (selection == 1) {
+    alert("Let's play!")
+    let difficulty = +prompt(`Select difficulty:
+        1 - Easy
+        2 - Medium
+        3 - Hard`)
+        if (difficulty == 1) {
+            alert("You selected the easy route.")
+        } else if (difficulty == 2) {
+            alert("Most people select medium.")
+        } else if (difficulty == 3) {
+            alert("I see you like a challenge!")
+        }
+} else if (selection == 2) {
+    alert("You selected Options.")
+} else if (selection == 3) {
+    alert("No new DLC at this time.")
+} else if (selection == 4) {
+    alert("Everything is up to date.")
+} else if (selection == 5) {
+    alert("Bye!")
+}
+}
+
+// 3.2 - Part 2 
+
+function greeting(hour) {
+    if ((hour >= 0) && (hour <=11)){
+        return("Good morning!");
+    } else if ((hour >= 12) && (hour <=17)) {
+        return("Good afternoon!")
+    } else if ((hour >= 18) && (hour <= 23)) {
+        return("Good evening")
+    }
+    return("Invalid hour!")
+}
+
+// 3.2 Optional
+
+function two_digit() {
+    let digit = randInt(0,10)
+    if (digit % 2 == 0) {
+        return("Even")
+    } else if (digit != 0) {
+        return("Odd")
+    }
+    if (digit == 0) {
+        return("0")
+    }
+
+}
