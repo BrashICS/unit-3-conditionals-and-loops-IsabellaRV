@@ -253,3 +253,12 @@ function two_digit() {
     }
 
 }
+
+/** LESSON 3.3 **/
+
+function is_number() {
+   
+}
+
+function which_day (n) {
+}
