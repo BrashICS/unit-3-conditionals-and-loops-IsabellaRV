@@ -256,9 +256,38 @@ function two_digit() {
 
 /** LESSON 3.3 **/
 
-function is_number() {
-   
+// Part 1
+
+function is_number(num) {
+   if (typeof num == "number") {
+    return("True")
+   } else {
+        return("False");
+   }
 }
 
-function which_day (n) {
+// Part 2
+
+function which_day(n) {
+    is_number(n)
+    if (typeof n != "number") {
+        return("Invalid type.")
+    }
+    if (n == 1) {
+        return("Sunday")
+    } else if (n == 2) {
+        return("Monday")
+    } else if (n == 3) {
+        return("Tuesday")
+    } else if (n == 4) {
+        return("Wednsday")
+    } else if (n == 5) {
+        return("Thursday")
+    } else if (n == 6) {
+        return("Friday")
+    } else if (n == 7) {
+        return("Saturday")
+    } else {
+        return("Invalid value.")
+    }
 }
