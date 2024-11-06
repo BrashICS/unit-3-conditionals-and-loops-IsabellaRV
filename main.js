@@ -13,7 +13,7 @@
 
 /*** Event Listeners ***/
 document.getElementById("sillygame").addEventListener("click" , startGame)
-
+document.getElementById("guess_game").addEventListener("click" , guess_10)
 
 /*** Functions ***/
 
@@ -289,5 +289,23 @@ function which_day(n) {
         return("Saturday")
     } else {
         return("Invalid value.")
+    }
+}
+
+// Part 3
+
+function guess_10() {
+    let n = randInt(1 , 10)
+    let guess = +prompt("I'm thinking of a number between 1-10.. what is it?")
+    if (guess == n) {
+        alert(`Yes! The number was ${n}`)
+    } else if (guess > 10) {
+        alert(`Your number was outside of the correct range (1-10). The correct number was ${n}`)
+    } else if (guess > n) {
+        alert(`Your guess was too high. The correct number was ${n}`)
+    } else if (guess < n) {
+        alert(`Your guess was too low. The correct number was ${n}`)
+    } else {
+        alert(`There was an error.`)
     }
 }
