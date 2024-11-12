@@ -309,3 +309,26 @@ function guess_10() {
         alert(`There was an error.`)
     }
 }
+
+/** LESSON 3.4 **/
+
+function countdown (start, stop) {
+    let attempts = 0
+    if (start < stop) {
+        return -1
+    } while (start >= stop) {
+        console.log(`${start}`)
+        start--
+        attempts++
+    } return (`${attempts}`)
+} 
+
+// Random Until Stop
+
+function random_until(min, max, stop) {
+    if (max > min || stop >= min || stop <= max) {
+        return -1
+    } while (stop != max) {
+        console.log()
+    } return (`${stop}`)
+}
