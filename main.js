@@ -352,3 +352,16 @@ function average(n) {
     avg = round(avg/n, 1)
     console.log(`The average is ${avg}`)
 }
+
+//** LESSON 3.5 **//
+
+//Print reverse
+
+function print_reverse(str) {
+    let amount = (str.length)
+    let one_char = (str.length - 1)
+    while (amount > one_char) {
+        
+    }
+
+}
