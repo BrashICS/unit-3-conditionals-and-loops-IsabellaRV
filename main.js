@@ -326,9 +326,29 @@ function countdown (start, stop) {
 // Random Until Stop
 
 function random_until(min, max, stop) {
-    if (max > min || stop >= min || stop <= max) {
+    let rnd = randInt(min , max)
+
+    //Error checking
+    if (stop < min || stop > max || max <= min) {
         return -1
-    } while (stop != max) {
-        console.log()
-    } return (`${stop}`)
+    } 
+    
+    //Check value
+    while (rnd != stop) {
+        console.log(rnd)
+        rnd = randInt(min , max)
+    } return stop
+}
+
+// Average
+
+function average(n) {
+    let avg = 0
+    let count = 1
+    while (count <= n) {
+        avg += +prompt(`Please enter value ${count}/${n}`)
+        count++
+    }
+    avg = round(avg/n, 1)
+    console.log(`The average is ${avg}`)
 }
