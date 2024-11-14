@@ -358,10 +358,25 @@ function average(n) {
 //Print reverse
 
 function print_reverse(str) {
-    let amount = (str.length)
-    let one_char = (str.length - 1)
-    while (amount > one_char) {
-        
-    }
-
+    let output = ""
+    let end = str.length - 1
+    while (end >= 0) {
+        output += str[end]
+        end--
+    } console.log(output)
 }
+
+function dragons_and_goblins(str) {
+    let dragons = 0
+    let goblins = 0
+    let char = 0
+    while (char < str.length) {
+        if (str[char] == "d") {
+            dragons++
+        } else if (str[char] == "g") {
+            goblins++
+        }
+        char++
+    } console.log(`Dragons: ${dragons} Goblins: ${goblins}`)
+}
+
