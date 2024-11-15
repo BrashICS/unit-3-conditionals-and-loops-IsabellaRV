@@ -380,3 +380,26 @@ function dragons_and_goblins(str) {
     } console.log(`Dragons: ${dragons} Goblins: ${goblins}`)
 }
 
+/** LESSON 3.6 **/
+
+function print_odd(n) {
+    let num = 1;
+    if (n > 1) {
+    do {
+        console.log(num)
+        num = num + 2
+    } while (num <= n)
+    } else if (n < 1 || isNaN(n)) {
+        return
+    }
+}
+
+function parrot() {
+    let input;
+    let response = ("GOODBYE 🦜");
+    do {
+    input = prompt("Please enter some text or the word 'quit' to exit")
+    alert(`${input.toUpperCase()}`)
+    } while (input.toLowerCase() != "quit")
+        alert(`${response}`)
+}
