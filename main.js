@@ -403,3 +403,23 @@ function parrot() {
     } while (input.toLowerCase() != "quit")
         alert(`${response}`)
 }
+
+/** LESSON 3.7 **/
+
+function count_up(start, stop) {
+    for (let min = start; min <= stop; min++) {
+        console.log(min)
+    }
+}
+
+function count_down(start, stop) {
+    for (let max = start; max >= stop; max--) {
+        console.log(max)
+    }
+}
+
+function print_chars(str, step) {
+    for (let char = str.length - 1; str.length >= char; str[char-step]) {
+        console.log()
+    }
+}
