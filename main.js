@@ -419,7 +419,15 @@ function count_down(start, stop) {
 }
 
 function print_chars(str, step) {
-    for (let char = str.length - 1; str.length >= char; str[char-step]) {
-        console.log()
+    for (let outcome = 0 ; outcome < str.length; outcome +=step) {
+        console.log(str[outcome]) // OH MY GOODNESS IT WORKED..
+    }
+}
+
+// Part 2
+
+function sum(n) {
+    for (let sum = 0 ; sum <= n; sum +=n) {
+        return sum
     }
 }
