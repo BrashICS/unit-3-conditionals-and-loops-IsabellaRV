@@ -427,7 +427,26 @@ function print_chars(str, step) {
 // Part 2
 
 function sum(n) {
-    for (let sum = 0 ; sum <= n; sum +=n) {
-        return sum
-    }
+    let total = 0
+    for (let sum = 1 ; sum <= n; sum++) {
+        total += sum // Adds to final sum as it counts up
+    } return (total)
+}
+
+function count4(begin, end) {
+    let final_int = 0
+    for (let int = begin; int <= end; int++) {
+         if (int % 4 == 0) { // If number is divisible by 4, add to the amount (final_int)
+            final_int ++
+        }
+    } return (final_int)
+}
+
+function sum_divisible(n, x) {
+    let total_div = 0 //The numbers that are divisible by 'x'
+    for (let i = 1; i <=n; i++) {
+        if (i % x == 0) {
+            total_div += i //Adds to the sum with numbers divisible by 'x'
+        }
+    } return (total_div)
 }
